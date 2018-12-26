@@ -34,13 +34,19 @@ hbs.registerHelper('screamIt', (text) => {
 app.get('/', (req, res) => {
     res.render('home.hbs', {
         pageTitle: 'Home Page',
-        welcomeMessage: 'welcome cccd'
+        welcomeMessage: 'welcome'
     });
 });
 
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
         pageTitle: 'About Page'        
+    });
+});
+
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects'        
     });
 });
 
